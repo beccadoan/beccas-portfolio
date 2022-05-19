@@ -1,7 +1,10 @@
 :root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --primary-color: #e89f73;
+    --secondary-color: #c28897;
+    --tertiary-color: #a0a5b1;
+    --dark-sage: #667b68;
+    --light-sage: #a3b899;
+    --pretty-font: 'Dancing Script', cursive;
   }
 
 * {
@@ -13,4 +16,88 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: var(--tertiary-color);
+}
+
+header {
+    font-family: var(--pretty-font);
+    padding: 20px 35px;
+    background-color: #c08879;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #f5d7c8;
+    font-size: 30px;
+    
+}
+
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+header nav ul li a {
+    padding: 10px 15px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background-color: #f5d7c8;
+    color: #c08879;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+
+@media screen and (max-width:980px){
+    header {
+        padding-bottom: 15px;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    header {
+        position: relative;
+    }
 }
