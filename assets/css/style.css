@@ -1,7 +1,6 @@
 :root {
-    --primary-color: #e89f73;
-    --secondary-color: #c28897;
-    --tertiary-color: #a0a5b1;
+    --primary-color: #c08879;
+    --secondary-color: #f5d7c8;
     --dark-sage: #667b68;
     --light-sage: #a3b899;
     --pretty-font: 'Dancing Script', cursive;
@@ -18,10 +17,12 @@ body {
     color: var(--tertiary-color);
 }
 
+/* Begin styling header */
+
 header {
     font-family: var(--pretty-font);
     padding: 20px 35px;
-    background-color: #c08879;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -41,11 +42,10 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: #f5d7c8;
+    color: var(--secondary-color);
     font-size: 30px;
     
 }
-
 
 header nav {
     margin: 7px 0;
@@ -59,19 +59,25 @@ header nav ul {
     list-style: none;
 }
 
-
 header nav ul li a {
     padding: 10px 15px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
-    background-color: #f5d7c8;
-    color: #c08879;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 15px;
-    text-shadow: none;
 }
 
+/* end styling header */
+
+/* start styling about me */
+
+.intro {
+    background-color: var(--secondary-color);
+}
+
+/* end styling about me */
 
 
 @media screen and (max-width:980px){
