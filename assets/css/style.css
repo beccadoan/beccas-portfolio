@@ -152,6 +152,35 @@ header nav ul li a:hover {
 
 /* end styling projects section */
 
+/* styling contact me section */
+.contact-info {
+    color: var(--primary-color);
+}
+
+.contact-info h3 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+    padding-bottom: 10px;
+}
+
+.contact-info li {
+    padding: 0 10px 0 10px;
+}
+
+.contact-info img {
+    width: 50px;
+}
+
+/* end styling contact me section */
+
 /* start styling footer */
 footer {
     background-color: var(--primary-color);
@@ -208,8 +237,6 @@ footer h2 {
     .intro-img {
         width: 350px;
     }
-
-    
 }
 
 @media screen and (max-width: 575px){
