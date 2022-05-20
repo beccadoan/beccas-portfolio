@@ -221,5 +221,8 @@ footer h2 {
         width: 80%;
     }
 
+header nav ul {
+    justify-content: center;
+}
    
 }
