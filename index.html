@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Becca's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,7 +18,7 @@
     <!--navigation-->
     <header>
         <h1>
-            <a href="index.html">BECCA</a>
+            <a href="index.html">Becca's Portfolio</a>
         </h1>
         <nav>
             <ul>
@@ -25,30 +29,107 @@
                     <a href="#my-projects">My Projects</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me!</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!--what we do section-->
-    <section id="about-me" class="intro">
-        <div class="intro-header">
+    <!--about me section-->
+    <section id="about-me">
+        <div class="content-header flex-row">
             <h2 class="">About Me</h2>
         </div>
-        <div class="intro-img">
-            <img src="./assets/images/headshot.jpg" alt="" class="">
-        </div> 
-        <div class="flex-row">
-            <p>
-                butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-            </p>
+        <div class="intro-container">
+            <div class="">
+                <img src="./assets/images/headshot.jpg" alt="" class="intro-img">
+            </div> 
+            <div class="flex-row about-me">
+                <p>
+                    Hi! I'm Becca. I graduated in 2017 with a degree in Electrical Engineering from the University of North Florida. I soon after moved to a small town in Kansas and became a Controls Engineer, using LabVIEW and PLCs to control automated machine processes. I decided that I wanted to make a career change to web development, and moved to Austin, TX to pursue a position working on web applications. I love checking out local coffee shops, going on walks, playing guitar, and being outdoors and active!
+                </p>
+            </div>
         </div>
     </section>
 
+
+    <section id="my-projects">
+        <div class="content-header flex-row">
+            <h2 class="">My Projects</h2>
+        </div>
+        <div class="projects">
+            <article class="project">
+                <a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank">
+                    <img src="./assets/images/front-end.jpg" alt="photo showcasing front end web technologies">
+                </a>
+                <div class="project-bio">
+                    <h3 class="">Front-End</h3>
+                    <p>
+                        My front end web development projects using HTML and CSS.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project">
+                <a href="https://www.simplilearn.com/tutorials/programming-tutorial/what-is-backend-development#:~:text=Backend%20developers%20build%20code%20that,what%20you%20don't%20see." target="blank">
+                    <img src="./assets/images/back-end.jpg" alt="photo showcasing back end web technologies">
+                </a>
+                    <div class="project-bio">
+                    <h3 class="">Back-End</h3>
+                    <p>
+                        My back end web development projects using node.js
+                    </p>
+                </div>
+            </article>
+
+            <article class="project">
+                <a href="https://careerfoundry.com/en/blog/web-development/what-is-a-full-stack-web-developer/" target="_blank">
+                    <img src="./assets/images/full-stack.png" alt="photo showcasing full stack web technologies">
+                </a>
+                    <div class="project-bio">
+                    <h3 class="">Full Stack</h3>
+                    <p>
+                        My full stack web development projects using both front and back end tools.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project">
+                <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank">
+                    <img src="./assets/images/web-dev.jpg" alt="photo showcasing front end web technologies">
+                </a>
+                <div class="project-bio">
+                    <h3 class="">More Projects</h3>
+                    <p>
+                        All the projects that didn't make it in the last categories!
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <div class="content-header flex-row">
+            <h2 class="">Contact Me</h2>
+        </div>
+        <ul>
+            <li>
+                Github: 
+            </li>
+            <li>
+                LinkedIn
+            </li>
+            <li>
+                Email 
+            </li>
+        </ul>
+    </section>
+
+    
+
     <!--footer-->
     <footer>
-        <h2>Thank you for visiting my page!</h2>
+        <h2 class="">Thank you for visiting my portfolio!</h2>
     </footer>
 
 </body>
